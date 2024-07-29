@@ -1,0 +1,465 @@
+@use 'var';
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+// Hero section
+header {
+    .header_section {
+        .navbar {
+            padding: 24px 80px;
+        }
+    }
+}
+
+// Hero Section
+.hero_section {
+    .container_fluid {
+        padding: 56px 80px;
+        gap: 80px;
+
+        .hero_head {
+            padding: opx 263px;
+            text-align: center;
+            width: 1280px;
+            height: 227px;
+
+            h1 {
+                font-size: 72px;
+                font-weight: 800;
+                line-height: 79px;
+                color: var.$light-purple;
+            }
+
+            p {
+                margin-top: 24px;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 36px;
+            }
+
+            .hero_btn {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                gap: 16px;
+                padding: 0px 263px;
+
+                input {
+                    width: 476px;
+                    height: 64px;
+                    border-radius: 26px;
+                    padding: 13px 24px;
+                    gap: 8px;
+                    border: 1px solid var.$light-gray;
+
+                    &::placeholder {
+                        font-size: 24px;
+                        font-weight: 400;
+                        line-height: 38px;
+                    }
+                }
+
+                button {
+                    width: 208px;
+                    height: 64px;
+                    border-radius: 26px;
+                    padding: 20px 24px;
+                    background-color: var.$light-purple;
+                    border: none;
+
+                    a {
+                        text-decoration: none;
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 24px;
+                        color: var.$white;
+                    }
+                }
+            }
+        }
+
+        .hero_img {
+            margin-top: 80px;
+            gap: 10px;
+
+            img {
+                width: 100%;
+                border-radius: 20px;
+                //    border: 2px solid var.$black; 
+            }
+        }
+    }
+}
+
+// Get better everyday section
+.better_section {
+    .container_fluid {
+        padding: 80px;
+
+        .better_head {
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+            width: 900px;
+            height: 246px;
+
+            h2 {
+                font-size: 56px;
+                font-weight: 800;
+                line-height: 62px;
+                color: var.$light-purple;
+            }
+
+            p {
+                margin-top: 24px;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 36px;
+            }
+
+            .better_btn {
+                button {
+                    width: 208px;
+                    height: 64px;
+                    border-radius: 26px;
+                    padding: 20px 24px;
+                    background-color: var.$light-purple;
+                    border: none;
+
+                    a {
+                        text-decoration: none;
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 24px;
+                        color: var.$white;
+                    }
+                }
+            }
+        }
+
+        .better_img {
+            img {
+                margin-top: 80px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+// Stories section
+.stories_section {
+    .container_fluid {
+        padding: 80px;
+        gap: 80px;
+        background-color: var.$white;
+
+        .stories_head {
+            text-align: center;
+            width: 900px;
+            height: 158px;
+            margin: 0 auto;
+            display: block;
+
+            h2 {
+                font-size: 56px;
+                font-weight: 800;
+                line-height: 62px;
+                color: var.$light-purple;
+            }
+
+            p {
+                margin-top: 24px;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 36px;
+            }
+        }
+
+        .stories_img {
+            margin-top: 80px;
+            padding: 0px 126px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 24px;
+
+            .card {
+                .lower_card {
+                    width: 266px;
+                    height: 80px;
+                    padding: 16px;
+                    gap: 16px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .lower {
+                        width: 234px;
+                        height: 48px;
+                        gap: 8px;
+
+                        h6 {
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 22px;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// What Other users say section
+.user_section {
+    .container_fluid {
+        // padding: 80px 0px;
+        height: 100vh;
+        .user_head {
+            width: 900px;
+            height: 62px;
+            gap: 24px;
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+         
+            h2 {
+                font-size: 56px;
+                font-weight: 800;
+                line-height: 62px;
+                color: var.$light-purple;
+                margin-top: 48px;
+            }
+        }
+
+        .user_card .carousel {
+            width: 900px;
+            height: 464px;
+            gap: 24px;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            margin-top: 80px;
+
+            .other_user {
+                padding: 40px;
+                width: 756px;
+                height: 425px;
+                gap: 10px;
+                background-color: var.$white;
+                margin: 0 auto;
+                display: block;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0px 0px 6px 0px;
+
+                h5 {
+                    font-size: 32px;
+                    font-weight: 700;
+                    line-height: 35px;
+                   
+                }
+
+                .one{
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 38px;
+                    margin-top: 25px;
+                }
+                .img{
+                   width: 660px;
+                   height: 179px;
+                   margin-top: 40px;
+                   gap: 16px;
+                   h6{
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 29px;
+                    margin-top: 32px;
+                   } 
+                   p{
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 22px;
+                   }
+                }
+            }
+
+        }
+    }
+}
+
+// Your favourite tools
+.tools_section{
+    .container_fluid{
+        padding: 80px;
+        // height: 100vh;
+        // margin-top: 150px;
+        .tools_head{
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+            width: 900px;
+            height: 158px;
+
+            h2 {
+                font-size: 56px;
+                font-weight: 800;
+                line-height: 62px;
+                color: var.$light-purple;
+            }
+
+            p {
+                margin-top: 24px;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 36px;
+            }
+        }
+        
+        .tools_cards{
+            .tools{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 48px;
+                
+                .tool{
+                    width: 345px;
+                height: 180px;
+
+                h6{
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 26px; 
+                }
+                p{
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 29px;  
+                }
+                }
+            }
+        }
+
+    }
+}
+
+// Asked question section
+.question_section{
+    .container_fluid{
+        padding: 80px 80px 0px 80px;
+        background-color: var.$smokewhite;
+        .question_head{
+            text-align: center;
+            width: 900px;
+            height: 158px;
+            gap: 24px;
+            margin: 0 auto;
+            h2 {
+                font-size: 56px;
+                font-weight: 800;
+                line-height: 62px;
+                color: var.$light-purple;
+            }
+
+            p {
+                margin-top: 24px;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 36px;
+            } 
+        }
+
+        .question_para{
+            .form {
+                padding: 80px 0px;
+                gap: 16px;
+    
+                .text {
+                    padding: 32px;
+                    // border: 1px solid var.$black;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 6px 0px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 24px;
+                    background-color: var.$white;
+    
+                    p {
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 22px;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        counter-reset: var.$gray;
+                    }
+    
+                    h4 {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// footer section
+.footer_section{
+    .container_fluid{
+        padding: 80px 80px 0px 80px;
+        .footer_head{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 48px 0px;
+          gap: 48px;
+          
+          .para{
+            width: 173px;
+            height: 318px;
+
+            h5{
+                padding: 12px 0px;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 18px;
+                color: var.$small;
+            }
+            p{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px; 
+                color: var.$small;
+            }
+          }
+        }
+
+        .footer_last{
+           padding: 24px 0px;
+           display: flex;
+           justify-content: space-between;
+           align-items: center; 
+
+           .icon{
+                i {
+                    width: 24px;
+                    height: 24px;
+                    gap: 16px;
+                }
+            
+           }
+        }
+    }
+}
